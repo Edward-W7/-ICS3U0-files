@@ -19,8 +19,8 @@ n = parseInt(readline.question("How many numbers are you inputting? \n"));
 sum = 0;
 
 //Initialize max and min variables as the min and max possible value. respectively
-min = Number.MAX_SAFE_INTEGER;
-max = Number.MIN_SAFE_INTEGER;
+min = Infinity
+max = -Infinity;
 
 
 //Iterate through each input and update values accordingly
@@ -32,7 +32,6 @@ for (i = 0; i < n; i++) {
 }
 
 //Output values
-console.log("The sum of the numbers is: " + sum);
 console.log("The average of the numbers is: " + Math.round(sum / n));
 console.log("The maximum of the numbers is: " + max);
 console.log("The minimum of the numbers is: " + min);
